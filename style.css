@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(black, lightgrey);
+    font-family: 'Montserrat', sans-serif;
+    height:100vh;
+}
+
+.topbar{
+    height: 10vh;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header
+{
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-loader{
+    display: none;
+    
+}
+
+
+.loader{
+    width: 5px;
+    height: 30px;
+    background-color: black;
+    margin: 4px;
+    
+}
+
+.loader1{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+.loader2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+.loader3{
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+
+.main-container{
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ip-display, .location-display, .geo-display{
+    font-size: 2rem;
+    margin: 6px;
+}
+
+.lookup-btn{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+.lookup-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@keyframes loading{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}

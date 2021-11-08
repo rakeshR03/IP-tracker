@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>IP tracker</title>
+</head>
+<body>
+    <div class="topbar">
+        <h1 class="header"><a href="http://127.0.0.1:5500/index.html">IP Tracker</a></h1>
+    </div>
+    <div class="main-container">
+        <div class="main-loader">
+            <div class="loader loader1"></div>
+            <div class="loader loader2"></div>
+            <div class="loader loader3"></div>
+        </div>
+        <div class="labels">
+            <h2 class="ip-display">IP Address: </h2>
+            <h2 class="location-display">Location: </h2>
+            <h2 class="geo-display">Geo-Location: </h2>
+            <button class="lookup-btn">Lookup IP</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" 
+    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
